@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               <Heart className="h-8 w-8 text-primary" />
               <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-                Sanskriti Events
+                PlanEazy
               </span>
             </div>
             <p className="text-muted-foreground leading-relaxed">

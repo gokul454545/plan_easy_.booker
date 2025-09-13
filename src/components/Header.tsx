@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex items-center gap-2">
           <Heart className="h-8 w-8 text-primary" />
           <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            Sanskriti Events
+            PlanEazy
           </span>
         </div>
 
@@ -34,9 +34,9 @@ const Header = () => {
 
         {/* Desktop CTA Buttons */}
         <div className="hidden md:flex items-center gap-3">
-          <Button variant="ghost" size="sm">
+          {/* <Button variant="ghost" size="sm">
             Login
-          </Button>
+          </Button> */}
           <Button variant="hero" size="sm">
             Get Started
           </Button>

@@ -132,7 +132,7 @@ const Services = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="hero" size="lg">
+          <Button variant="hero" size="lg" onClick={() => window.location.href = '/services'}>
             Browse All Services
           </Button>
         </div>

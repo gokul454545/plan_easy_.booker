@@ -25,7 +25,7 @@ const Auth = () => {
           <img 
             src={logo} 
             alt="Logo" 
-            className="w-16 h-16 mx-auto mb-4"
+            className="w-16 h-16 mx-auto mb-4 filter brightness-0 invert"
           />
           <h1 className="text-2xl font-bold text-white">Welcome</h1>
           <p className="text-white/80">

@@ -14,8 +14,8 @@ const Auth = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // For now, just navigate to dashboard (replace with actual auth later)
-    navigate("/dashboard");
+    // Navigate to home page after auth
+    navigate("/home");
   };
 
   return (

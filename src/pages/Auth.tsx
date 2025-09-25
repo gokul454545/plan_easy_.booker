@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo-handshake.png";
+import logo from "@/assets/logo-handshake.png"; // Or use relative path if needed
 
 const Auth = () => {
   const navigate = useNavigate();
@@ -14,7 +14,6 @@ const Auth = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Navigate to home page after auth
     navigate("/home");
   };
 
@@ -22,10 +21,10 @@ const Auth = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-hero p-4">
       <div className="w-full max-w-md animate-slide-up">
         <div className="text-center mb-8">
-          <img 
-            src={logo} 
-            alt="Logo" 
-            className="w-16 h-16 mx-auto mb-4 filter brightness-0 invert"
+          <img
+            src={logo}
+            alt="Logo"
+            className="w-16 h-16 mx-auto mb-4" // No filters
           />
           <h1 className="text-2xl font-bold text-white">Welcome</h1>
           <p className="text-white/80">
@@ -55,7 +54,7 @@ const Auth = () => {
               </Button>
             </div>
           </CardHeader>
-          
+
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="space-y-2">

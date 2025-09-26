@@ -22,10 +22,10 @@ const CallToAction = () => {
                 <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-smooth">
                   <Users className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2">Start as Customer</h3>
-                <p className="text-white/80 text-sm mb-6">Plan your perfect celebration with our verified service providers</p>
+                <h3 className="text-xl font-semibold text-white mb-2">AI Planning</h3>
+                <p className="text-white/80 text-sm mb-6">Let our AI help you plan your perfect celebration with smart recommendations</p>
                 <Button variant="secondary" size="lg" className="w-full">
-                  Get Started
+                  Try AI
                 </Button>
               </div>
             </Card>
@@ -35,10 +35,10 @@ const CallToAction = () => {
                 <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-smooth">
                   <Store className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2">Join as Dealer</h3>
-                <p className="text-white/80 text-sm mb-6">Grow your business by connecting with customers in your area</p>
+                <h3 className="text-xl font-semibold text-white mb-2">Manual Planning</h3>
+                <p className="text-white/80 text-sm mb-6">Take full control and manually select every detail for your celebration</p>
                 <Button variant="outline" size="lg" className="w-full bg-transparent border-white text-white hover:bg-white hover:text-primary">
-                  Become a Partner
+                  Plan Manually
                 </Button>
               </div>
             </Card>

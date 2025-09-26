@@ -16,10 +16,32 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container px-4 py-20 text-center text-white">
         <div className="max-w-4xl mx-auto space-y-8">
+          {/* Image Carousel */}
+          <div className="relative w-full max-w-md mx-auto mb-8">
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-black/20 backdrop-blur-sm border border-white/20">
+              <img 
+                src={heroImage} 
+                alt="Wedding Anniversary - Every Occasion Meets Perfection"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+                {[...Array(5)].map((_, i) => (
+                  <div 
+                    key={i}
+                    className={`w-2 h-2 rounded-full ${i === 0 ? 'bg-white' : 'bg-white/50'}`}
+                  />
+                ))}
+              </div>
+            </div>
+            <div className="text-center mt-4">
+              <p className="text-lg font-semibold text-white">Every Occasion Meets Perfection</p>
+            </div>
+          </div>
+
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 text-sm font-medium border border-white/20">
             <Sparkles className="h-4 w-4" />
-            Traditional Indian Function Planning Made Easy
+            Ready to Organize a plan with
           </div>
 
           {/* Main Heading */}
@@ -38,16 +60,16 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-            <Button variant="hero" size="lg" className="w-full sm:w-auto text-lg px-8 py-4">
-              Find Services
+          <div className="flex flex-row gap-4 justify-center items-center pt-8 max-w-xs mx-auto">
+            <Button variant="hero" size="lg" className="flex-1 text-lg px-6 py-4">
+              AI
             </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="w-full sm:w-auto text-lg px-8 py-4 bg-white/10 border-white/30 text-white hover:bg-white/20"
+              className="flex-1 text-lg px-6 py-4 bg-white/10 border-white/30 text-white hover:bg-white/20"
             >
-              Become a Dealer
+              Manual
             </Button>
           </div>
 
